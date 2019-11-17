@@ -53,7 +53,7 @@ def movies_with_director_key(name, movies_collection)
   directors_array = []
   while i < movies_collection.length do 
     movies_collection[i][:director_name] = name 
-    director_name << movies_collection[i]
+    directors_name << movies_collection[i]
   end
   directors_array
 end
