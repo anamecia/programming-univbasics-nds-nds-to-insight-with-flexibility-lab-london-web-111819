@@ -76,11 +76,16 @@ def gross_per_studio(collection)
   studio_array = []
   i = 0 
   while i < collection do 
-    if studio_array[collection[i][:studio]]
-      studio_array[]
+    studio_name = collection[i][:studio]
+    if studio_array[studio_name]
+      studio_array[studio_name] += collection[i][:worldwide_gross]
+    else
+      studio_hash = {studio_name => collection[i][:worldwide_gross]}
+      studio_array << 
     end
+    i += 1
   end
-  
+  studio_array
 end
 
 
