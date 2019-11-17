@@ -104,7 +104,7 @@ def movies_with_directors_set(source)
   new_array = []
   i = 0
   while i < source.length do 
-    ii < 0
+    ii = 0
     while ii < source[i][:movies].length do
       source[i][:movies][ii][:director_name] = source[i][:name]
       new_array << [source[i][:movie][ii]]
