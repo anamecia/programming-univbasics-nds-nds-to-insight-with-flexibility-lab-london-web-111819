@@ -81,11 +81,10 @@ def gross_per_studio(collection)
       studio_hash[studio_name] += collection[i][:worldwide_gross]
     else
       studio_hash[studio_name] = collection[i][:worldwide_gross]
-      studio_hash
     end
     i += 1
   end
-  studio_array
+  studio_hash
 end
 
 
